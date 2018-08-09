@@ -149,6 +149,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\under-construction\css\bootstrap.css" />
+    <Content Include="Assets\under-construction\css\bootstrap.min.css" />
+    <Content Include="Assets\under-construction\css\custom.css" />
+    <Content Include="Assets\under-construction\css\font-awesome.css" />
+    <Content Include="Assets\under-construction\css\font-awesome.min.css" />
+    <Content Include="Assets\under-construction\css\style.default.css" />
+    <Content Include="Assets\under-construction\favicon.png" />
+    <Content Include="Assets\under-construction\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\under-construction\img\logo.png" />
+    <Content Include="Assets\under-construction\img\pexels-photo-40120.jpg" />
+    <Content Include="Assets\under-construction\img\thunderstruck_wallpaper_by_tardifice-d6884xz.jpg" />
+    <Content Include="Assets\under-construction\index.html" />
+    <Content Include="Assets\under-construction\js\bootstrap.js" />
+    <Content Include="Assets\under-construction\js\bootstrap.min.js" />
+    <Content Include="Assets\under-construction\js\front.js" />
+    <Content Include="Assets\under-construction\js\jquery.cookie.js" />
+    <Content Include="Assets\under-construction\license.txt" />
+    <Content Include="Assets\under-construction\readme.txt" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -160,6 +178,13 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\under-construction\css\bootstrap.css.map" />
+    <Content Include="Assets\under-construction\css\bootstrap.min.css.map" />
+    <Content Include="Assets\under-construction\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\under-construction\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\under-construction\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\under-construction\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\under-construction\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -171,6 +196,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <None Include="Views\Home\Index.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -184,7 +210,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
