@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model Thunderstruck.Models.ThunderstruckViewModel
+
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -27,15 +29,40 @@
     <div class="container-fluid">
       <div class="row intro">
         <div class="col-md-6 col-sm-8 intro-left"> 
-          <div class="intro-left-content">
-            <p> <img src="~/Assets/under-construction/img/logo.png" alt="Template Logo"></p>
-            <h1>Under construction.</h1>
-            <p class="lead">We are working hard to bring to you our great project soon.</p>
-            <p>Coming soon/Under construction template by Bootstrapious.com. I hope you will enjoy working with it. This a paragraph where some more info about your project could go. </p>
-            <p class="social"><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#" class="email"><i class="fa fa-envelope"> </i></a></p>
-            @*<p class="credit">&copy; 2017 Your company | Template by <a href="https://bootstrapious.com/coming-soon-themes" class="external">Bootstrapious</a>  </p>*@
-            <!-- Please do not remove the backlink to bootstrapious unless you support us at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :) -->
-          </div>
+            <div class="intro-left-content">
+                @*<p> <img src="~/Assets/under-construction/img/logo.png" alt="Template Logo"></p>*@
+                <h1>THUNDERSTRUCK</h1>
+                <p class="lead">Enter the number of particpants for the Thunderstruck game.</p>
+                @*<p>Coming soon/Under construction template by Bootstrapious.com. I hope you will enjoy working with it. This a paragraph where some more info about your project could go. </p>*@
+                @using (Html.BeginForm())
+    {
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h1 class="panel-title">Enter Number Of Participants For Thunderstruck</h1>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.SearchEntity.ProductName, "Number of Participants")
+                        @Html.TextBoxFor(m => m.SearchEntity.ProductName, new { @class = "form-control" })
+                        <button id="=" btnSearch" class="btn btn-sm btn-primary" data-pdsa-action="add">
+                            <i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Add
+                        </button>
+                    </div>
+                </div>
+
+                <div class="panel-footer">
+                   
+                    <button id="=" btnSearch" class="btn btn-sm btn-primary" data-pdsa-action="resetentry">
+                        <i class="glyphicon glyphicon-search"></i>&nbsp;Reset
+                    </button>  
+                </div>
+            </div>
+}
+
+                <p class="social"><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#" class="email"><i class="fa fa-envelope"> </i></a></p>
+                @*<p class="credit">&copy; 2017 Your company | Template by <a href="https://bootstrapious.com/coming-soon-themes" class="external">Bootstrapious</a>  </p>*@
+                <!-- Please do not remove the backlink to bootstrapious unless you support us at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :) -->
+            </div>
         </div>
         <div style="background-image: url('../../Assets/under-construction/img/thunderstruck_wallpaper_by_tardifice-d6884xz.jpg');
 " class="col-md-6 col-sm-4 intro-right background-gray"></div>

@@ -10,6 +10,8 @@ namespace Thunderstruck.Controllers
     {
         public ActionResult Index()
         {
+
+
             return View();
         }
 
