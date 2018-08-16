@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Thunderstruck.Models;
 
 namespace Thunderstruck.Controllers
 {
@@ -10,9 +11,11 @@ namespace Thunderstruck.Controllers
     {
         public ActionResult Index()
         {
+            ThunderstruckViewModel vm = new ThunderstruckViewModel();
 
+            vm.HandleRequest();
 
-            return View();
+            return View(vm);
         }
 
         public ActionResult About()

@@ -20,35 +20,35 @@ namespace Thunderstruck
 
         public bool IsDetailAreaVisible { get; set; }
         public bool IsListAreaVisible { get; set; }
-        public bool IsSearchAreaVisible { get; set; }
+        public bool IsCalculationAreaVisible { get; set; }
 
         public virtual void HandleRequest()
         {
             switch (EventCommand.ToLower())
             {
-                case "list":
-                    Get();
-                    break;
+                //case "list":
+                //    Get();
+                //    break;
 
-                case "search":
-                    Get();
-                    break;
+                //case "search":
+                //    Get();
+                //    break;
 
                 case "resetentry":
-                    ResetSearch();
+                    ResetEntry();
                     Get();
                     break;
 
-                case "edit":
-                    //System.Diagnostics.Debugger.Break(); used this code to stop and lok at code and inspect web page
-                    IsValid = true;
-                    Edit();
-                    break;
+                //case "edit":
+                //    //System.Diagnostics.Debugger.Break(); used this code to stop and lok at code and inspect web page
+                //    IsValid = true;
+                //    Edit();
+                //    break;
 
-                case "delete":
-                    ResetSearch();
-                    Delete();
-                    break;
+                //case "delete":
+                //    ResetSearch();
+                //    Delete();
+                //    break;
 
                 case "save":
                     Save();
@@ -58,14 +58,14 @@ namespace Thunderstruck
                     }
                     break;
 
-                case "add":
-                    Add();
+                case "calc":
+                    Calc();
                     break;
 
-                case "cancel":
-                    ListMode();
-                    Get();
-                    break;
+                //case "cancel":
+                //    ListMode();
+                //    Get();
+                //    break;
 
                 default:
                     break;
@@ -78,13 +78,13 @@ namespace Thunderstruck
             IsValid = true;
 
             IsListAreaVisible = true;
-            IsSearchAreaVisible = true;
+            IsCalculationAreaVisible = true;
             IsDetailAreaVisible = false;
 
             Mode = "List";
         }
 
-        protected virtual void ResetSearch()
+        protected virtual void ResetEntry()
         {
 
         }
@@ -99,9 +99,9 @@ namespace Thunderstruck
 
             if (!IsValid)
             {
-                if (Mode == "Add")
+                if (Mode == "Calc")
                 {
-                    AddMode();
+                    CalcMode();
                 }
                 else
                 {
@@ -111,19 +111,19 @@ namespace Thunderstruck
 
         }
 
-        protected virtual void AddMode()
+        protected virtual void CalcMode()
         {
             IsListAreaVisible = false;
-            IsSearchAreaVisible = false;
-            IsDetailAreaVisible = true;
+            IsCalculationAreaVisible = true;
+            IsDetailAreaVisible = false;
 
-            Mode = "Add";
+            Mode = "Calc";
         }
 
         protected virtual void EditMode()
         {
             IsListAreaVisible = false;
-            IsSearchAreaVisible = false;
+            IsCalculationAreaVisible = false;
             IsDetailAreaVisible = true;
 
             Mode = "Edit";
@@ -144,9 +144,52 @@ namespace Thunderstruck
 
         }
 
-        protected virtual void Add()
+        protected virtual void Calc()
         {
-            AddMode();
+            //function thunder()
+            //{
+            //    var value1 = Number(document.getElementById("fThunder").value);
+
+            //    var drinker1 = 0;
+            //    var drinker2 = 0;
+            //    var drinker3 = 0;
+            //    var result = 0;
+
+            //    for (i = 1; i <= value1; i++)
+            //    {
+
+            //        if (value1 <= 1)
+            //        {
+            //            return result = "Enter number from 2 to 34."
+            //        }
+
+            //        if (16 % value1 === 0)
+            //        {
+            //            drinker1 = value1;
+            //        }
+
+            //        if (20 % value1 === 0)
+            //        {
+            //            drinker2 = value1;
+            //        }
+
+            //        if (24 % value1 === 0)
+            //        {
+            //            drinker3 = value1;
+            //        }
+
+
+
+            //    }
+
+
+
+            //    document.getElementById("result").innerHTML = result;
+
+            //}
+
+
+            CalcMode();            
         }
 
         protected virtual void Edit()
@@ -154,12 +197,12 @@ namespace Thunderstruck
             EditMode();
         }
 
-        protected virtual void Delete()
-        {
+        //protected virtual void Delete()
+        //{
 
-            //Get();  we could add this
-            ListMode();
-        }
+        //    //Get();  we could add this
+        //    ListMode();
+        //}
 
 
     }

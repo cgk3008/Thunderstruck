@@ -8,16 +8,16 @@ namespace Thunderstruck.Models
 {
     public class ThunderstruckViewModel : ViewModelBase
     {
-        [Range(1, 34, ErrorMessage = "{0} must be between {1} and {2}.")]
+        [Range(2, 34, ErrorMessage = "{0} must be between {1} and {2}.")]
         public int Players { get; set; }
         public int BigDrinkers { get; set; }
 
 
-        protected override void ResetSearch()
+        protected override void ResetEntry()
         {
             //SearchEntity = new TrainingProduct();
 
-            base.ResetSearch();
+            base.ResetEntry();
         }
     }
 }
