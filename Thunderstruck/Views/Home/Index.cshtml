@@ -26,64 +26,70 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <body>
-
+  
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  
+    <br />
 
     <div class="container-fluid">
         <div class="row intro">
             <div class="col-md-6 col-sm-8 intro-left">
                 <div class="intro-left-content">
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    @*<p> <img src="~/Assets/under-construction/img/logo.png" alt="Template Logo"></p>*@
-                    <h1>THUNDERSTRUCK</h1>
+
 
                     @*<p>Coming soon/Under construction template by Bootstrapious.com. I hope you will enjoy working with it. This a paragraph where some more info about your project could go. </p>*@
 
-                    <input type="number" id="fThunder" placeholder="Enter Participants" />
-                    <br />
-                    <br />
-                    <text type="number" id="result"></text>
-                    <br />
-                    <br />
-                    <input type="button" value="Calculate" onclick="thunder()" class="btn">
-                    <br />
+                    <div class="row">
+                        <div class="col-md-12 well">
+                            <h1>THUNDERSTRUCK</h1>
+                            <input type="number" class="form-control" id="fThunder" placeholder="Enter Participants" />
+                            <br />
+                            <br />
+                            <text type="number" class="text-large"  id="resultThunder1"></text>
+                            <br />
+                            <text type="text"   id="resultThunder2"></text>
+                            <br />
+                            <br />
+                            <input type="button" class="text-large"  value="Calculate" onclick="thunder()" class="btn">
+                            <br />
+                            <br />
+                        </div>
+
+                    </div>
                     <br />
 
                     @using (Html.BeginForm())
-    {
-                @Html.HiddenFor(m => m.EventCommand)
-                @Html.HiddenFor(m => m.Mode)
-                @Html.HiddenFor(m => m.EventArgument)
+                    {
+                        @Html.HiddenFor(m => m.EventCommand)
+                        @Html.HiddenFor(m => m.Mode)
+                        @Html.HiddenFor(m => m.EventArgument)
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h1 class="panel-title">Enter Number Of Participants For Thunderstruck</h1>
-                    </div>
-                    <div class="panel-body">
-                        <div class="form-group">
-                            @Html.LabelFor(m => m.Players, "Number of Participants")
-                            @Html.TextBoxFor(m => m.Players, new { @class = "form-control" })
-                            <button id="=" btnCalc" class="btn btn-sm btn-primary" data-pdsa-action="calc">
-                                <i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Calc
-                            </button>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">Enter Number Of Participants For Thunderstruck</h1>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    @Html.LabelFor(m => m.Players, "Number of Participants")
+                                    @Html.TextBoxFor(m => m.Players, new { @class = "form-control" })
+                                    <button id="=" btnCalc" class="btn btn-sm btn-primary" data-pdsa-action="calc">
+                                        <i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Calc
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="panel-footer">
+
+                                <button id="=" btnSearch" class="btn btn-sm btn-primary" data-pdsa-action="resetentry">
+                                    <i class="glyphicon glyphicon-refresh"></i>&nbsp;Reset
+                                </button>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="panel-footer">
-
-                        <button id="=" btnSearch" class="btn btn-sm btn-primary" data-pdsa-action="resetentry">
-                            <i class="glyphicon glyphicon-refresh"></i>&nbsp;Reset
-                        </button>
-                    </div>
-                </div>
-} <p class="lead">Thunderstruck is a simple game. Play the AC/DC song Thunderstruck and start with the first player drinking when "Thunder" or "Thunderstruck" is heard. The player must keep drinking until the next "Thunder" or "Thunderstruck" is spoken, at which point the next player in line starts drinking. </p>
+                    } <p class="lead">Thunderstruck is a simple game. Play the AC/DC song Thunderstruck and start with the first player drinking when "Thunder" or "Thunderstruck" is heard. The player must keep drinking until the next "Thunder" or "Thunderstruck" is spoken, at which point the next player in line starts drinking. </p>
 
                     <p class="social"><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#" class="email"><i class="fa fa-envelope"> </i></a></p>
                     @*<p class="credit">&copy; 2017 Your company | Template by <a href="https://bootstrapious.com/coming-soon-themes" class="external">Bootstrapious</a>  </p>*@
@@ -123,40 +129,48 @@
             });
         });
 
+
         function thunder() {
-            var value1 = Number(document.getElementById("fThunder").value);
+            var playerNum = Number(document.getElementById("fThunder").value);
 
             var drinker1 = 0;
             var drinker2 = 0;
-            var drinker3 = 0;  
-            var result = 0;
-            
-            for (i = 1; i <= value1; i++) {
+            var drinker3 = 0;
+            var array1 = [drinker1, drinker2, drinker3];
 
-                if (value1 <= 1) {
-                    return result = "Enter number from 2 to 34."
-                }
+            var result2 = "Enter number from 2 to 34!";
 
-                if (16 % value1 === 0) {
-                    drinker1 = value1;
-                }
-
-                if (20 % value1 === 0) {
-                    drinker2 = value1;
-                }
-
-                if (24 % value1 === 0) {
-                    drinker3 = value1;
-                }
-
-
-
+            if (playerNum < 2 || playerNum > 34) {
+                document.getElementById("resultThunder2").innerHTML = result2;
             }
 
+            else {
+                if (16 % playerNum != 0) {
+                    drinker1 = 16 % playerNum;
+                }
+                else {
+                    drinker1 = playerNum;
+                }
 
+                if (20 % playerNum != 0) {
+                    drinker2 = 20 % playerNum;
+                }
+                else {
+                    drinker2 = playerNum;
+                }
 
-            document.getElementById("result").innerHTML = result;
+                if (24 % playerNum != 0) {
+                    drinker3 = 24 % playerNum;
+                }
+                else {
+                    drinker3 = playerNum;
+                }
 
+                var array1 = [drinker1, drinker2, drinker3];
+                result1 = array1;
+
+                document.getElementById("resultThunder1").innerHTML = result1;
+            }
         }
     </script>
 

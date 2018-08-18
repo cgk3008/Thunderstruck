@@ -207,14 +207,14 @@ fieldset[disabled] .btn-white.active {
   background: #fff;
 }
 .intro-left-content {
-  padding: 20px 10px;
+  padding: 10px 10px;
 }
 @media (min-width: 767px) {
   .intro-left-content {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    padding: 80px;
+    padding: 20px;
   }
 }
 @media (max-width: 991px) {
@@ -850,7 +850,7 @@ label {
   width: 100%;
   height: 37px;
   padding: 6px 12px;
-  font-size: 15px;
+  font-size: 30px;
   line-height: 1.55;
   color: #555555;
   background-color: #fff;
