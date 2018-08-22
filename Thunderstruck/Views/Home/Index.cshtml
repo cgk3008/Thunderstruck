@@ -30,79 +30,85 @@
    
 
     @*<div class="container-fluid">*@
-        <div class="row intro">
-            <div class="col-md-6 col-sm-8 intro-left">
-                <div class="intro-left-content">
+    <div class="row intro">
+        <div class="col-md-6 col-sm-8 intro-left">
+            <div class="intro-left-content">
+               
+                
+                <br />
+                <br />
+                @*<p>Coming soon/Under construction template by Bootstrapious.com. I hope you will enjoy working with it. This a paragraph where some more info about your project could go. </p>*@
+                <img src="~/Assets/under-construction/img/coollogo_com-4742622.png" />
+                <div class="row">
+                    <div class="col-md-12 well">
+                        @*<script src="http://h2.flashvortex.com/display.php?id=2_1534947417_3132_495_0_484_105_10_2_47" type="text/javascript"></script>*@
 
 
-                    @*<p>Coming soon/Under construction template by Bootstrapious.com. I hope you will enjoy working with it. This a paragraph where some more info about your project could go. </p>*@
+                        <input type="number" class="form-control" id="fThunder" placeholder="Enter Participants" />
+                        <br />
+                        <br />
+                        <text type="number" class="text-large" id="resultThunder1"></text>
+                        <br />
+                        <text type="text" id="resultThunder2"></text>
+                        <br />
+                        <br />
+                        <input type="button" class="text-large" value="Calculate" onclick="thunder()">
+                        <br />
+                        <br />
 
-                    <div class="row">
-                        <div class="col-md-12 well">
-                            @*<h1>THUNDERSTRUCK</h1>*@
-                            <input type="number" class="form-control" id="fThunder" placeholder="Enter Participants" />
-                            <br />
-                            <br />
-                            <text type="number" class="text-large" id="resultThunder1"></text>
-                            <br />
-                            <text type="text" id="resultThunder2"></text>
-                            <br />
-                            <br />
-                            <input type="button" class="text-large" value="Calculate" onclick="thunder()">
-                            <br />
-                            <br />
+                        <p class="lead">
+                            Thunderstruck is a simple game. Play the AC/DC song Thunderstruck and start with the first player drinking when "Thunder" or "Thunderstruck" is heard. The player must keep drinking until the next "Thunder" or "Thunderstruck" is spoken, at which point the next player in line starts drinking.
 
-                            <p class="lead">
-                                Thunderstruck is a simple game. Play the AC/DC song Thunderstruck and start with the first player drinking when "Thunder" or "Thunderstruck" is heard. The player must keep drinking until the next "Thunder" or "Thunderstruck" is spoken, at which point the next player in line starts drinking.
 
-                               
 
-                            </p>
+                        </p>
 
-                            <a href=" https://www.youtube.com/watch?v=v2AC41dglnM" class="btn btn-primary">ThunderStruck YouTube</a>
-                        </div>
-
+                        <a href=" https://www.youtube.com/watch?v=v2AC41dglnM" class="btn btn-primary">ThunderStruck YouTube</a>
                     </div>
-                    <br />
 
-                    @*@using (Html.BeginForm())
-                    {
-                        @Html.HiddenFor(m => m.EventCommand)
-                        @Html.HiddenFor(m => m.Mode)
-                        @Html.HiddenFor(m => m.EventArgument)
+                </div>
+                <br />
 
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h1 class="panel-title">Enter Number Of Participants For Thunderstruck</h1>
-                            </div>
-                            <div class="panel-body">
-                                <div class="form-group">
-                                    @Html.LabelFor(m => m.Players, "Number of Participants")
-                                    @Html.TextBoxFor(m => m.Players, new { @class = "form-control" })
-                                    <button id="=" btnCalc" class="btn btn-sm btn-primary" data-pdsa-action="calc">
-                                        <i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Calc
-                                    </button>
-                                </div>
-                            </div>
+                @*@using (Html.BeginForm())
+                {
+                    @Html.HiddenFor(m => m.EventCommand)
+                    @Html.HiddenFor(m => m.Mode)
+                    @Html.HiddenFor(m => m.EventArgument)
 
-                            <div class="panel-footer">
-
-                                <button id="=" btnSearch" class="btn btn-sm btn-primary" data-pdsa-action="resetentry">
-                                    <i class="glyphicon glyphicon-refresh"></i>&nbsp;Reset
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Enter Number Of Participants For Thunderstruck</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Players, "Number of Participants")
+                                @Html.TextBoxFor(m => m.Players, new { @class = "form-control" })
+                                <button id="=" btnCalc" class="btn btn-sm btn-primary" data-pdsa-action="calc">
+                                    <i class="glyphicon glyphicon-plus-sign"></i>&nbsp;Calc
                                 </button>
                             </div>
                         </div>
-                    } <p class="lead">Thunderstruck is a simple game. Play the AC/DC song Thunderstruck and start with the first player drinking when "Thunder" or "Thunderstruck" is heard. The player must keep drinking until the next "Thunder" or "Thunderstruck" is spoken, at which point the next player in line starts drinking. </p>
 
-                    <p class="social"><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#" class="email"><i class="fa fa-envelope"> </i></a></p>*@
-                    @*<p class="credit">&copy; 2017 Your company | Template by <a href="https://bootstrapious.com/coming-soon-themes" class="external">Bootstrapious</a>  </p>*@
-                    <!-- Please do not remove the backlink to bootstrapious unless you support us at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :) -->
-                </div>
+                        <div class="panel-footer">
+
+                            <button id="=" btnSearch" class="btn btn-sm btn-primary" data-pdsa-action="resetentry">
+                                <i class="glyphicon glyphicon-refresh"></i>&nbsp;Reset
+                            </button>
+                        </div>
+                    </div>
+                } <p class="lead">Thunderstruck is a simple game. Play the AC/DC song Thunderstruck and start with the first player drinking when "Thunder" or "Thunderstruck" is heard. The player must keep drinking until the next "Thunder" or "Thunderstruck" is spoken, at which point the next player in line starts drinking. </p>
+
+                <p class="social"><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#" class="email"><i class="fa fa-envelope"> </i></a></p>*@
+                @*<p class="credit">&copy; 2017 Your company | Template by <a href="https://bootstrapious.com/coming-soon-themes" class="external">Bootstrapious</a>  </p>*@
+                <!-- Please do not remove the backlink to bootstrapious unless you support us at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :) -->
             </div>
-            <div style="        /*background-image: url('../../Assets/under-construction/img/thunderstruck_wallpaper_by_tardifice-d6884xz.jpg');*/
-        background-image: url('../../Assets/under-construction/img/thunderstruck_wallpaper_by_tardifice-d6884xz.png');
-" class="col-md-6 col-sm-4 intro-right background-gray"></div>
         </div>
+        <img src="~/Assets/under-construction/img/red-lightning-bolt-cloud-sky-storm-animated-gif.gif" />
+
+        @*<div style="        /*background-image: url('../../Assets/under-construction/img/thunderstruck_wallpaper_by_tardifice-d6884xz.jpg');*/
+                background-image: url('../../Assets/under-construction/img/thunderstruck_wallpaper_by_tardifice-d6884xz.png');
+        " class="col-md-6 col-sm-4 intro-right background-gray"></div>*@
+    </div>
     
     <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

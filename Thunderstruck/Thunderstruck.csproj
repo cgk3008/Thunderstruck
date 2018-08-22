@@ -159,8 +159,15 @@
     <Content Include="Assets\under-construction\css\style.default.css" />
     <Content Include="Assets\under-construction\favicon.png" />
     <Content Include="Assets\under-construction\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\under-construction\img\coollogo_com-2794486.png" />
+    <Content Include="Assets\under-construction\img\coollogo_com-30882573.gif" />
+    <Content Include="Assets\under-construction\img\coollogo_com-4742622.png" />
+    <Content Include="Assets\under-construction\img\large-storm-cloud-thunder-lighting-bolts-strike-animated-gif.gif" />
+    <Content Include="Assets\under-construction\img\lighting-bolt-shooting-from-could-close-up-animated-gif.gif" />
+    <Content Include="Assets\under-construction\img\lightning-storm-animated-gif-1.gif" />
     <Content Include="Assets\under-construction\img\logo.png" />
     <Content Include="Assets\under-construction\img\pexels-photo-40120.jpg" />
+    <Content Include="Assets\under-construction\img\red-lightning-bolt-cloud-sky-storm-animated-gif.gif" />
     <Content Include="Assets\under-construction\img\thunderstruck_wallpaper_by_tardifice-d6884xz.jpg" />
     <Content Include="Assets\under-construction\img\thunderstruck_wallpaper_by_tardifice-d6884xz.png" />
     <Content Include="Assets\under-construction\index.html" />
