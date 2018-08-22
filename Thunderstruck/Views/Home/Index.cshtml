@@ -34,8 +34,7 @@
         <div class="col-md-6 col-sm-8 intro-left">
             <div class="intro-left-content">
                
-                
-                <br />
+               
                 <br />
                 @*<p>Coming soon/Under construction template by Bootstrapious.com. I hope you will enjoy working with it. This a paragraph where some more info about your project could go. </p>*@
                 <img src="~/Assets/under-construction/img/coollogo_com-4742622.png" />
@@ -46,24 +45,29 @@
 
                         <input type="number" class="form-control" id="fThunder" placeholder="Enter Participants" />
                         <br />
-                        <br />
+                        
                         <text type="number" class="text-large" id="resultThunder1"></text>
                         <br />
-                        <text type="text" id="resultThunder2"></text>
+
+
                         <br />
-                        <br />
+                        <p class="lead">
+                            The button below will calculate the drinkers that must drink the longest.
+                        </p>
+
+                       
                         <input type="button" class="text-large" value="Calculate" onclick="thunder()">
                         <br />
                         <br />
 
                         <p class="lead">
-                            Thunderstruck is a simple game. Play the AC/DC song Thunderstruck and start with the first player drinking when "Thunder" or "Thunderstruck" is heard. The player must keep drinking until the next "Thunder" or "Thunderstruck" is spoken, at which point the next player in line starts drinking.
+                            Thunderstruck is a simple game. Play the AC/DC song Thunderstruck and start with the first player drinking when "Thunder" or "Thunderstruck" is heard. The player must keep drinking until the next "Thunder" or "Thunderstruck" is spoken, at which point the next player in line starts drinking. There are 
 
 
 
                         </p>
 
-                        <a href=" https://www.youtube.com/watch?v=v2AC41dglnM" class="btn btn-primary">ThunderStruck YouTube</a>
+                        <a href=" https://www.youtube.com/watch?v=v2AC41dglnM" class="btn btn-primary">THUNDERSTRUCK YouTube</a>
                     </div>
 
                 </div>
@@ -145,13 +149,13 @@
 
             var drinker1 = 0;
             var drinker2 = 0;
-            var drinker3 = 0;
-            var array1 = [drinker1, drinker2, drinker3];
+            //var drinker3 = 0;
+            var array1 = [drinker1, drinker2];
 
             var result2 = "Enter number from 2 to 34!";
 
             if (playerNum < 2 || playerNum > 34) {
-                document.getElementById("resultThunder2").innerHTML = result2;
+                document.getElementById("resultThunder1").innerHTML = result2;
             }
 
             else {
@@ -169,14 +173,14 @@
                     drinker2 = playerNum;
                 }
 
-                if (24 % playerNum != 0) {
-                    drinker3 = 24 % playerNum;
-                }
-                else {
-                    drinker3 = playerNum;
-                }
+                //if (24 % playerNum != 0) {
+                //    drinker3 = 24 % playerNum;
+                //}
+                //else {
+                //    drinker3 = playerNum;
+                //}
 
-                var array1 = [drinker1, drinker2, drinker3];
+                var array1 = [drinker1, drinker2];
                 result1 = array1;
 
                 document.getElementById("resultThunder1").innerHTML = result1;
