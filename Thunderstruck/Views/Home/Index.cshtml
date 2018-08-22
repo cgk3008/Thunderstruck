@@ -27,15 +27,9 @@
 </head>
 <body>
   
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-  
-    <br />
+   
 
-    <div class="container-fluid">
+    @*<div class="container-fluid">*@
         <div class="row intro">
             <div class="col-md-6 col-sm-8 intro-left">
                 <div class="intro-left-content">
@@ -45,24 +39,33 @@
 
                     <div class="row">
                         <div class="col-md-12 well">
-                            <h1>THUNDERSTRUCK</h1>
+                            @*<h1>THUNDERSTRUCK</h1>*@
                             <input type="number" class="form-control" id="fThunder" placeholder="Enter Participants" />
                             <br />
                             <br />
-                            <text type="number" class="text-large"  id="resultThunder1"></text>
+                            <text type="number" class="text-large" id="resultThunder1"></text>
                             <br />
-                            <text type="text"   id="resultThunder2"></text>
-                            <br />
-                            <br />
-                            <input type="button" class="text-large"  value="Calculate" onclick="thunder()" class="btn">
+                            <text type="text" id="resultThunder2"></text>
                             <br />
                             <br />
+                            <input type="button" class="text-large" value="Calculate" onclick="thunder()">
+                            <br />
+                            <br />
+
+                            <p class="lead">
+                                Thunderstruck is a simple game. Play the AC/DC song Thunderstruck and start with the first player drinking when "Thunder" or "Thunderstruck" is heard. The player must keep drinking until the next "Thunder" or "Thunderstruck" is spoken, at which point the next player in line starts drinking.
+
+                               
+
+                            </p>
+
+                            <a href=" https://www.youtube.com/watch?v=v2AC41dglnM" class="btn btn-primary">ThunderStruck YouTube</a>
                         </div>
 
                     </div>
                     <br />
 
-                    @using (Html.BeginForm())
+                    @*@using (Html.BeginForm())
                     {
                         @Html.HiddenFor(m => m.EventCommand)
                         @Html.HiddenFor(m => m.Mode)
@@ -91,15 +94,16 @@
                         </div>
                     } <p class="lead">Thunderstruck is a simple game. Play the AC/DC song Thunderstruck and start with the first player drinking when "Thunder" or "Thunderstruck" is heard. The player must keep drinking until the next "Thunder" or "Thunderstruck" is spoken, at which point the next player in line starts drinking. </p>
 
-                    <p class="social"><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#" class="email"><i class="fa fa-envelope"> </i></a></p>
+                    <p class="social"><a href="#" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="external instagram"><i class="fa fa-instagram"></i></a><a href="#" class="email"><i class="fa fa-envelope"> </i></a></p>*@
                     @*<p class="credit">&copy; 2017 Your company | Template by <a href="https://bootstrapious.com/coming-soon-themes" class="external">Bootstrapious</a>  </p>*@
                     <!-- Please do not remove the backlink to bootstrapious unless you support us at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :) -->
                 </div>
             </div>
-            <div style="background-image: url('../../Assets/under-construction/img/thunderstruck_wallpaper_by_tardifice-d6884xz.jpg');
+            <div style="        /*background-image: url('../../Assets/under-construction/img/thunderstruck_wallpaper_by_tardifice-d6884xz.jpg');*/
+        background-image: url('../../Assets/under-construction/img/thunderstruck_wallpaper_by_tardifice-d6884xz.png');
 " class="col-md-6 col-sm-4 intro-right background-gray"></div>
         </div>
-    </div>
+    
     <!-- Javascript files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="~/Assets/under-construction/js/bootstrap.min.js"></script>

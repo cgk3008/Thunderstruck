@@ -162,6 +162,7 @@
     <Content Include="Assets\under-construction\img\logo.png" />
     <Content Include="Assets\under-construction\img\pexels-photo-40120.jpg" />
     <Content Include="Assets\under-construction\img\thunderstruck_wallpaper_by_tardifice-d6884xz.jpg" />
+    <Content Include="Assets\under-construction\img\thunderstruck_wallpaper_by_tardifice-d6884xz.png" />
     <Content Include="Assets\under-construction\index.html" />
     <Content Include="Assets\under-construction\js\bootstrap.js" />
     <Content Include="Assets\under-construction\js\bootstrap.min.js" />
@@ -187,6 +188,7 @@
     <Content Include="Assets\under-construction\fonts\fontawesome-webfont.woff" />
     <Content Include="Assets\under-construction\fonts\fontawesome-webfont.woff2" />
     <Content Include="Assets\under-construction\fonts\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\ThunderstruckGame - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

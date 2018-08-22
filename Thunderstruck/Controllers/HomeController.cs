@@ -11,11 +11,13 @@ namespace Thunderstruck.Controllers
     {
         public ActionResult Index()
         {
-            ThunderstruckViewModel vm = new ThunderstruckViewModel();
 
-            vm.HandleRequest();
+            return View();
+            //ThunderstruckViewModel vm = new ThunderstruckViewModel();
 
-            return View(vm);
+            //vm.HandleRequest();
+
+            //return View(vm);
         }
 
         public ActionResult About()
