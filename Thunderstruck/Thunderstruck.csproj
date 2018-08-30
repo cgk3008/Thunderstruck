@@ -151,6 +151,7 @@
     <Compile Include="ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\%28Disc 13%29 01 - Thunderstruck.mp3" />
     <Content Include="Assets\under-construction\css\bootstrap.css" />
     <Content Include="Assets\under-construction\css\bootstrap.min.css" />
     <Content Include="Assets\under-construction\css\custom.css" />
